@@ -102,18 +102,46 @@ button:hover {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+
 button,
 button:focus {
   outline: none;
   box-shadow: none;
 }
+
+.span btn-custom {
+  cursor: pointer;
+  /*display: -webkit-inline-box;*/
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 35px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  background-color: #fee86d;
+  color: #222222;
+  border: 0px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
 p {
   line-height: 25px;
   margin-bottom: 0px;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -215,8 +243,8 @@ body.hidden {
   padding-bottom: 80px;
 }
 .section-tb-padding {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .section-1t-padding {
   padding-top: 60px;
@@ -255,7 +283,7 @@ body.hidden {
 .section-title h2 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   line-height: 1;
 }
 /* home-1 container css */
@@ -265,6 +293,7 @@ body.hidden {
   padding-right: 60px;
 }
 /* top notification css */
+
 /* currency css */
 .top1 {
   background-color: #222;
@@ -432,10 +461,12 @@ body.hidden {
 }
 .header-main-area.is-sticky {
   background-color: #ffffff;
+  border-bottom: none;
 }
 @media (max-width: 1199px) {
   .header-main-area.is-sticky {
     background-color: #ffffff;
+    border-bottom: none;
   }
 }
 .header-main-area.is-sticky {
@@ -450,7 +481,6 @@ body.hidden {
   -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 15%);
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  background-color: #fff;
   animation: smoothScroll 1s forwards;
 }
 @keyframes smoothScroll {
@@ -485,7 +515,7 @@ body.hidden {
   font-size: 16px;
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 40px;
   height: 100%;
   display: flex;
@@ -572,7 +602,6 @@ button.navbar-toggler span.line::after {
   .user-icon
   a.user-icon-desk {
   display: block;
-  font-size: 30px;
   line-height: 0;
 }
 .right-block-box
@@ -886,7 +915,7 @@ button.navbar-toggler span.line::after {
 }
 .header-bottom-area .main-menu-area {
   position: relative;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .header-bottom-area .main-menu-area .main-navigation {
   display: flex;
@@ -2374,7 +2403,7 @@ button.navbar-toggler span.line::after {
   margin-right: 0px;
 }
 .our-products-tab ul.nav.nav-tabs li.nav-item a.nav-link {
-  color: #949494;
+  color: #0e0404;
   font-size: 14px;
   font-weight: 600;
   padding: 12px 30px;
@@ -2383,8 +2412,8 @@ button.navbar-toggler span.line::after {
 }
 .our-products-tab ul.nav.nav-tabs li.nav-item a.nav-link.active,
 .our-products-tab ul.nav.nav-tabs li.nav-item a.nav-link:hover {
-  color: #000;
-  border: 1px solid #000;
+  color: #ffb503;
+  border: 1px solid #ffb503;
 }
 /* Testimonial css */
 .testimonial-bg1 {
@@ -7585,8 +7614,8 @@ a.scroll:hover span {
 }
 .pro-page-content .pro-page-tab ul.nav.nav-tabs li.nav-item a.nav-link.active,
 .pro-page-content .pro-page-tab ul.nav.nav-tabs li.nav-item a.nav-link:hover {
-  color: #000;
-  border: 1px solid #000;
+  color: #ffb503;
+  border: 1px solid #ffb503;
 }
 .pro-page-content .pro-page-tab .tab-content iframe {
   width: 100%;
@@ -7771,7 +7800,7 @@ a.scroll:hover span {
 }
 .pro-releted .section-title h2 {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .tred-pro {
   position: relative;
